@@ -120,19 +120,5 @@ class t_spct_cordint:
 		return self.f_cor
     
 
-    #def plot_process(self)
-	#def plot_deco_time(self)
 
 
-# basic settings
-# time unit is mili seconds, frequency unit is kHz
-
-
-
-#test_time = 50
-
-#rwtl = 100                          #simpling points on timeline in 2ms  
-#rtl = np.linspace(0,0.00005,rwtl)   #different waiting time to use
-#dwtl = 50
-#dtl = np.linspace(0,0.000025,dwtl)
-                                    #doing the experiment 200 times for average value  
