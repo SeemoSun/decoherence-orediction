@@ -1,6 +1,10 @@
 # decoherence-orediction
 This is a simple python module used for dynamical coupling and ramsey pulse sequence with noise presence
 
+## Usage:
+
+ import dep 
+
 ## Functions:
  - signal_generator(freq_cor,freq_spec,tlist)
  
@@ -64,6 +68,37 @@ Functions:
   
     the function is equal to return to the last value in the list of fidelity, but without calculating throughout the whole process.
     
+ ### t_spct_cordint
+ 
+ Attributes:
+ 
+  - delta_t: float, could be time sampling spacing if you input a time list; could be frequency sampling spacing if you input a frequency coordiante
+
+  - mode: int, 0(1) from time list(frequency coordinate) to get frequecny coordinate(time list) for reliable FFT result.
+
+  - t_cor: array, time list
+
+  - f_cor: array, frequency coordinate
+
+Functions:
+
+  - def __init__(self,delta_t,grid_n,mode)
+     
+    initialize an t_spct_cordint obejct, by returning to a list with length __grin_d__, spacing __delta_t__, and mode 0(1) if you input a time list(frequency coordinate)
+
+  - generate_cor(self)
+
+    call from a t_spct_cordint object
+    
+    From time list(frequency coordinate) to get frequecny coordinate(time list) for reliable FFT result
+
+  - get_t_cor(self)
+  
+    call from a t_spct_cordint object, return to the time list you wanted(corresponding to your frequency coordinate)
+
+  - get_f_cor(self)
+
+    call from a t_spct_cordint object, return to the frequency coordinate you wanted(corresponding to your time list)
  
  
   
